@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SimpleExample.unity
+    path: Assets/Scenes/SimpleExample.unity
     guid: d19eaa4b359de7548904eed95b2cd203
   - enabled: 1
-    path: Assets/EmotivUnityPlugin.unity
-    guid: ee5bec8a3b94441e1a701424d4cfc49c
+    path: Assets/Scenes/BreatheWorld.unity
+    guid: a2b9171013b96734dab88190c557e926
   m_configObjects: {}
