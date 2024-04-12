@@ -13,7 +13,7 @@ public class SimpleExample : MonoBehaviour
     private string _appName = "ThesisArticleJaimeCiriaco";
     private string _appVersion = "3.3.0";
 
-    EmotivUnityItf _eItf = EmotivUnityItf.Instance;
+    public EmotivUnityItf _eItf = EmotivUnityItf.Instance;
     float _timerDataUpdate = 0;
     const float TIME_UPDATE_DATA = 1f;
     bool _isDataBufferUsing = false; // default subscribed data will not saved to Data buffer
@@ -100,7 +100,6 @@ public class SimpleExample : MonoBehaviour
                 MessageLog.text = msgLog;
             }
         }
-
     }
 
     /// <summary>
@@ -325,6 +324,7 @@ public class SimpleExample : MonoBehaviour
         }
         if (COMToggle.isOn) {
             _streams.Add("com");
+            //Debug.Log()
         }
         return _streams;
     }

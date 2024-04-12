@@ -285,10 +285,16 @@ namespace EmotivUnityPlugin
             }
             else if (e.StreamName == DataStreamName.PerformanceMetrics) //JAIMEWASHERE
             {
-                foreach(System.Object met in e.Data)
-                {
-                    UnityEngine.Debug.Log("JAIMEOnStreamDataReceived " + " " + met);
-                }
+                //int takeStress = 0;
+                //foreach(System.Object met in e.Data)
+                //{
+                //    takeStress++;
+                //    UnityEngine.Debug.Log("JAIMEOnStreamDataReceived " + " " + met + " " + takeStress);
+                //    if(takeStress == 10)
+                //    {
+                //        //met
+                //    }
+                //}
 
                 PerfDataReceived(this, e.Data);
             }

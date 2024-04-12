@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace EmotivUnityPlugin
 {
@@ -41,7 +42,8 @@ namespace EmotivUnityPlugin
         public string TrainingLog { get => _trainingLog; set => _trainingLog = value; }
         public string MessageLog { get => _messageLog; set => _messageLog = value; }
 
-
+        //Jaime
+        public string MentalComandName;
 
         /// <summary>
         /// Set up App configuration.
@@ -576,11 +578,14 @@ namespace EmotivUnityPlugin
             _messageLog = dataText;
         }
 
-        private void OnMentalCommandReceived(object sender, MentalCommandEventArgs data)
+        public void OnMentalCommandReceived(object sender, MentalCommandEventArgs data)
         {
             string dataText = "com data: " + data.Act + ", power: " + data.Pow.ToString() + ", time " + data.Time.ToString();
             // print out data to console
             UnityEngine.Debug.Log(dataText);
+
+            //data.Act = FindObjectOfType<ConcordiaDataMaster>().MentalComand;
+            MentalComandName = data.Act;
         }
 
         private void OnFacialExpReceived(object sender, FacEventArgs data)

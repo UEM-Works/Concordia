@@ -185,6 +185,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "git.bunny83.simplejson": {
+      "version": "https://github.com/davidtabernerom/SimpleJSON.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "fc979284d1b9e0f017b300e9b2a71bfaa2f6e313"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
